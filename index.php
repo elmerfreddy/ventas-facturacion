@@ -1,4 +1,7 @@
 <?php
+
+require_once "Config/Config.php";
+
 $ruta = !empty($_GET['url']) ? $_GET['url'] : 'Home';
 $array = explode("/", $ruta);
 $controller = $array[0];
